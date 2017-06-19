@@ -1,0 +1,828 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, img, ins, kbd, q, s, samp,
+small, strike, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* end of Eric Meyer's reset *
+
+/* my own site styles */
+
+body {
+	font-family: 'Raleway', sans-serif;
+	font-size: 16px;
+}
+
+#container {
+	width: 900px;
+	margin: 0 auto;
+	background-color: #ffffff;
+}
+
+/* nav styles */
+
+nav {
+	background-color: rgba(255,255,255,0.9);
+	width: 100%;
+	height: 100px;
+	position: fixed;
+	top: 0;
+	left: 0;
+}
+
+.menu-top {
+	width: 900px;
+	height: 20px;
+	margin: 0 auto;
+	padding-top: 8px;
+}
+
+.menu {
+	width: 900px;
+	height: 80px;
+	margin: 0 auto;
+	
+}
+
+#logo-raleway {
+	font-family: 'Raleway', sans-serif;
+	font-size: 26px;
+	font-weight: lighter;
+	display: inline;
+	padding-right: 5px;
+}
+
+#logo-abril {
+	font-family: 'Abril Fatface', cursive;
+	font-size: 52px;
+	margin-top: 30px;
+	display: inline;
+	padding-right: 5px;
+}
+
+.social-media {
+	width: 80px;
+	height: 10px;
+	float: right; 
+}
+
+.social-media i {
+	width: 80px;
+	display: inline;
+	text-align: right;
+	padding-left: 10px;
+}
+
+ul {
+	font-family: 'Raleway', sans-serif;
+	font-size: 14px;
+	font-weight: lighter;
+	text-align: center;
+	width: auto;
+	height: 50px;
+	margin-top: 34px;
+	float: right;
+	box-sizing: border-box;
+}
+
+ul li { 
+	display: inline;
+	padding: 25px;
+	padding-right: 2px;
+ }
+
+a {
+	text-decoration: none;
+	color: #000000;
+}
+
+a:hover {
+	transition: .2s ease;
+	color: rgba(0,0,0,0.6);
+}
+
+/* header styles */ 
+
+header {
+	width: 900px;
+	height: 400px;
+	background-image: url('../img/labia-grey.jpg');
+	background-size: cover;
+	background-position: center;
+	margin-top: 100px;
+}
+
+.overlay {
+	width: 900px;
+	height: 400px;
+	background-color: rgba(0,0,0,0.5);
+}
+
+header h2 {
+	font-family: 'Raleway', sans-serif;
+	font-size: 30px;
+	font-weight: lighter;
+	text-align: center;
+	color: #ffffff;
+	padding-top: 140px;
+}
+
+header h1 {
+	font-family: 'Raleway', sans-serif;
+	font-size: 50px;
+	font-weight: bold;
+	text-align: center;
+	text-transform: uppercase;
+	color: #ffffff;
+	padding-top: 5px;
+}
+
+.header-buttons {
+	width: 520px;
+	height: 30px;
+	margin: 0 auto;
+	padding-top: 110px;
+}
+
+header button {
+	width: 160px;
+	height: 30px;
+	background-color: #D1D3D4;
+	border: none;
+	text-transform: uppercase;
+	font-size: 14px;
+	margin: 0 5px 0 5px;
+}
+
+header button:hover {
+	transition: .2s ease;
+	background-color: #ffffff;
+}
+
+/* content styles */
+
+.current-screenings h1 {
+	font-family: 'Raleway', sans-serif;
+	font-size: 30px;
+	font-weight: bold;
+	text-align: center;
+	text-transform: uppercase;
+	margin: auto; 
+	margin-top: 30px;
+	margin-bottom: 25px;
+}
+
+.current-screenings .one-third {
+	width: 295px;
+	height: 300px;
+	float: left;
+	box-sizing: border-box;
+	background-color: #000000;
+	margin: 5px 0;
+}
+
+.current-screenings .one-third-center {
+	width: 290px;
+	height: 300px;
+	float: left;
+	box-sizing: border-box;
+	background-color: #000000;
+	margin: 5px 10px;
+}
+
+.first-movie {
+	background-image: url('../img/wonder-woman-tmb.jpg');
+	background-size: cover;
+	background-position: center;
+	width: 295px;
+	height: 300px;
+	opacity: 1;
+}
+
+.first-movie:hover {
+	transition: .2s ease;
+	opacity: 0.75;
+}
+
+.second-movie {
+	background-image: url('../img/la-la-land-tmb.jpg');
+	background-size: cover;
+	background-position: center;
+	width: 290px;
+	height: 300px;
+}
+
+.second-movie:hover {
+	transition: .2s ease;
+	opacity: 0.75;
+}
+
+.third-movie {
+	background-image: url('../img/lion-tmb.jpg');
+	background-size: cover;
+	background-position: center;
+	width: 295px;
+	height: 300px;
+}
+
+.third-movie:hover {
+	transition: .2s ease;
+	opacity: 0.75;
+}
+
+.fourth-movie {
+	background-image: url('../img/true-cost-tmb.jpg');
+	background-size: cover;
+	background-position: center;
+	width: 295px;
+	height: 300px;
+}
+
+.fourth-movie:hover {
+	transition: .2s ease;
+	opacity: 0.75;
+}
+
+.fifth-movie {
+	background-image: url('../img/sugar-film-tmb.jpg');
+	background-size: cover;
+	background-position: center;
+	width: 290px;
+	height: 300px;
+}
+
+.fifth-movie:hover {
+	transition: .2s ease;
+	opacity: 0.75;
+}
+
+.sixth-movie {
+	background-image: url('../img/intouchables-tmb.jpg');
+	background-size: cover;
+	background-position: center;
+	width: 295px;
+	height: 300px;
+}
+
+.sixth-movie:hover {
+	transition: .2s ease;
+	opacity: 0.75;
+}
+
+/* specials */
+
+.specials h1 {
+	font-family: 'Raleway', sans-serif;
+	font-size: 30px;
+	text-align: center;
+	font-weight: bold;
+	margin-top: 180px;
+	text-transform: uppercase;
+}
+
+.specials .one-third {
+	width: 295px;
+	height: 300px;
+	float: left;
+	box-sizing: border-box;
+	background-color: #F1F2F2;
+	margin: 5px 0;
+	margin-top: 40px;
+}
+
+.specials .one-third-center {
+	width: 290px;
+	height: 300px;
+	float: left;
+	box-sizing: border-box;
+	background-color: #F1F2F2;
+	margin: 5px 10px;
+	margin-top: 40px;
+}
+
+.meal-icon {
+	width: 60px;
+	height: 60px;
+	background-image: url('../img/meal.png');
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	margin: 30px 117px 0 117px;
+}
+
+.food-icon {
+	width: 60px;
+	height: 60px;
+	background-image: url('../img/food.png');
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	margin: 30px 117px 0 117px;
+}
+
+.drinks-icon {
+	width: 60px;
+	height: 60px;
+	background-image: url('../img/drinks.png');
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	margin: 30px 117px 0 117px;
+}
+
+.specials h2 {
+	font-family: 'Raleway', sans-serif;
+	font-size: 20px;
+	text-align: center;
+	font-weight: bold;
+	margin-top: 25px;
+	text-transform: uppercase;
+}
+
+.specials p {
+	font-family: 'Raleway', sans-serif;
+	font-size: 16px;
+	text-align: center;
+	margin: 25px;
+	line-height: 1.5;
+}
+
+.specials-button {
+	width: 170px;
+	height: 30px;
+	margin: 0 auto; 
+	padding-top: 40px;
+}
+
+.specials button {
+	width: 160px;
+	height: 30px;
+	background-color: #000000;
+	border: none;
+}
+
+.specials button a {
+	text-transform: uppercase;
+	color: #ffffff;
+	font-size: 14px;
+}
+
+.specials button:hover {
+	transition: .2s ease;
+	background-color: #58595B;
+}
+
+/* bookings styles */
+
+.booking h1 {
+	font-family: 'Raleway', sans-serif;
+	font-size: 30px;
+	text-align: center;
+	font-weight: bold;
+	margin-top: 180px;
+	text-transform: uppercase;
+}
+
+.booking h2 {
+	font-family: 'Raleway', sans-serif;
+	font-size: 20px;
+	text-align: center;
+	font-weight: bold;
+	margin-top: 30px;
+	text-transform: uppercase;
+}
+
+.booking .one-third {
+	width: 295px;
+	height: 300px;
+	float: left;
+	box-sizing: border-box;
+	background-color: #F1F2F2;
+	margin: 10px 0;
+}
+
+.booking .two-third {
+	width: 595px;
+	height: 300px;
+	background-color: #F1F2F2;
+	float: right;
+	box-sizing: border-box;
+	margin: 10px 0;
+}
+
+.left ul {
+	font-family: 'Raleway', sans-serif;
+	font-size: 16px;
+	text-align: left;
+	line-height: 1.2;
+	width: auto;
+	float: left;
+	box-sizing: border-box;
+	margin-top: 30px;
+	margin-left: 30px;
+}
+
+.left ul li {
+	display: block;
+	padding: 5px;
+}
+
+.left-meal ul {
+	font-family: 'Raleway', sans-serif;
+	font-size: 16px;
+	text-align: left;
+	line-height: 1.2;
+	width: auto;
+	float: left;
+	box-sizing: border-box;
+	margin-top: 30px;
+	margin-left: 20px;
+}
+
+.left-meal ul li {
+	display: block;
+	padding: 5px;
+}
+
+.left-prices ul {
+	font-weight: bold;
+	margin-left: 20px;
+
+}
+
+.left-prices ul li:nth-of-type(even) {
+	opacity: 0;
+}
+
+.right ul {
+	font-family: 'Raleway', sans-serif;
+	font-size: 16px;
+	font-weight: bold;
+	text-align: right;
+	line-height: 1.2;
+	width: auto;
+	float: right;
+	box-sizing: border-box;
+	margin-top: 30px;
+	margin-right: 30px;
+}
+
+.right ul li {
+	display: block;
+	padding: 5px;
+}
+
+/* booking form */
+
+form {
+	width: 900px;
+	height: 100px;
+	background-color: #F1F2F2;
+	margin: 0 auto;
+	margin-top: 50px;
+	padding-left: 32px;
+	box-sizing: border-box;
+}
+
+input {
+	background-color: #ffffff;
+	font-size: 14px;
+	font-weight: lighter;
+	border: none;
+	width: 140px;
+	height: 30px;
+	margin: 35px 5px;
+	padding: 10px;
+	box-sizing: border-box;
+}
+
+#quantity {
+	width: 50px;
+}
+
+.booking button {
+	width: 140px;
+	height: 30px;
+	background-color: #000000;
+	border: none;
+	text-transform: uppercase;
+	color: #ffffff;
+	font-size: 14px;
+	margin-left: 10px;
+	box-sizing: border-box;
+}
+
+/* contact styles */
+
+.contact h1 {
+	font-family: 'Raleway', sans-serif;
+	font-size: 30px;
+	text-align: center;
+	font-weight: bold;
+	margin-top: 180px;
+	text-transform: uppercase;
+}
+
+.contact h2 {
+	font-family: 'Raleway', sans-serif;
+	font-size: 20px;
+	text-align: left;
+	font-weight: bold;
+	margin-top: 25px;
+	margin-bottom: 25px;
+	text-transform: uppercase;
+}
+
+.contact p {
+	font-family: 'Raleway', sans-serif;
+	font-size: 14px;
+	text-align: left;
+}
+
+.contact .one-third {
+	width: 295px;
+	height: 300px;
+	float: left;
+	box-sizing: border-box;
+	background-color: #F1F2F2;
+	margin: 5px 0;
+	margin-top: 40px;
+}
+
+.contact .one-third:nth-of-type(1) {
+	background-color: transparent;
+}
+
+.contact .one-third-center {
+	width: 290px;
+	height: 300px;
+	float: left;
+	box-sizing: border-box;
+	background-color: #F1F2F2;
+	margin: 5px 10px;
+	margin-top: 40px;
+}
+
+/* contact form */ 
+
+.contact form {
+	margin-top: 38px;
+	margin-left: 17px;
+	width: 225px;
+}
+
+.contact input {
+ 	display: block;
+ 	margin: 10px auto;
+ 	width: 185px;
+ 	border-style: none;
+ 	font-family: 'Raleway', sans-serif;
+	font-size: 14px;
+	padding: 10px;
+	box-sizing: border-box;
+ }
+
+ .contact textarea {
+ 	display: block;
+ 	margin: 10px auto;
+ 	width: 185px;
+ 	height: 90px;
+ 	border-style: none;
+ 	font-family: 'Raleway', sans-serif;
+	font-size: 14px;
+	color: grey;
+	padding: 10px;
+	box-sizing: border-box;
+	resize: none;
+ }
+
+ .contact button {
+ 	font-family: 'Raleway', sans-serif;
+	font-size: 14px;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: #ffffff;
+ 	width: 160px;
+ 	height: 30px;
+ 	background-color: #000000;
+ 	border: none;
+ 	margin: 10px auto;
+ 	margin-left: 18px;
+ 	text-align: center;
+ 	box-sizing: border-box;
+ }
+
+ /* movie content styles */
+
+.movie-content .one-third {
+	width: 295px;
+	height: 445px;
+	float: left;
+	box-sizing: border-box;
+	background-image: url(../img/wonder-woman.jpg);
+	background-size: cover;
+	margin: 10px 0;
+	margin-top: 180px; 
+}
+
+.movie-content .one-third-la-la-land {
+	width: 295px;
+	height: 445px;
+	float: left;
+	box-sizing: border-box;
+	background-image: url(../img/la-la-land.jpg);
+	background-size: cover;
+	margin: 10px 0;
+	margin-top: 180px; 
+}
+
+.movie-content .one-third-lion {
+	width: 295px;
+	height: 445px;
+	float: left;
+	box-sizing: border-box;
+	background-image: url(../img/lion.jpg);
+	background-size: cover;
+	margin: 10px 0;
+	margin-top: 180px; 
+}
+
+.movie-content .one-third-true-cost {
+	width: 295px;
+	height: 445px;
+	float: left;
+	box-sizing: border-box;
+	background-image: url(../img/true-cost.jpg);
+	background-size: cover;
+	margin: 10px 0;
+	margin-top: 180px; 
+}
+
+.movie-content .one-third-sugar-film {
+	width: 295px;
+	height: 445px;
+	float: left;
+	box-sizing: border-box;
+	background-image: url(../img/sugar-film.jpg);
+	background-size: cover;
+	margin: 10px 0;
+	margin-top: 180px; 
+}
+
+.movie-content .one-third-intouchables {
+	width: 295px;
+	height: 445px;
+	float: left;
+	box-sizing: border-box;
+	background-image: url(../img/intouchables.jpg);
+	background-size: cover;
+	margin: 10px 0;
+	margin-top: 180px; 
+}
+
+.movie-content .two-third {
+	width: 540px;
+	height: 445px;
+	float: right;
+	box-sizing: border-box;
+	margin: 10px 0;
+	margin-top: 180px;	
+}
+
+.movie-content h1 {
+	font-family: 'Raleway', sans-serif;
+	font-size: 30px;
+	text-align: left;
+	font-weight: bold;
+	margin-top: 10px;
+	text-transform: uppercase;
+}
+
+.movie-content h2 {
+	font-family: 'Raleway', sans-serif;
+	font-size: 20px;
+	text-align: left;
+	font-weight: bold;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	text-transform: uppercase;
+}
+
+.movie-content p {
+	font-family: 'Raleway', sans-serif;
+	font-size: 16px;
+	line-height: 1.5;
+	text-align: left;
+}
+
+.movie-content ul {
+	font-family: 'Raleway', sans-serif;
+	font-size: 16px;
+	font-weight: lighter;
+	text-align: left;
+	width: auto;
+	height: 20px;
+	margin-top: 12px;
+	margin-bottom: 18px;
+	float: left;
+	box-sizing: border-box;
+}
+
+.movie-content ul li { 
+	display: inline;
+	padding: 8px 25px;
+	background-color: #F1F2F2;
+ }
+
+.movie-content button {
+ 	font-family: 'Raleway', sans-serif;
+	font-size: 14px;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: #ffffff;
+ 	width: 178px;
+ 	height: 30px;
+ 	background-color: #000000;
+ 	border: none;
+ 	margin: 10px 0;
+ 	text-align: center;
+ 	box-sizing: border-box;
+ }
+
+.movie-content a {
+	font-weight: bold;
+	color: #ffffff;
+}
+/* footer styles */
+
+.index {
+	position: static;
+	font-family: 'Raleway', sans-serif;
+	font-size: 14px;
+	font-weight: lighter;
+	text-align: left;
+	text-align: center;
+	margin-top: 50px;
+}
+
+footer {
+	position: fixed;
+	width: 900px;
+	bottom: 5px;
+	font-family: 'Raleway', sans-serif;
+	font-size: 14px;
+	font-weight: lighter;
+	text-align: left;
+	text-align: center;
+}
+
+footer section {
+	margin: 0 auto;
+}
+
+.clearfix {
+	clear: both;
+}

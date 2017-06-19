@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>The Labia Theatre</title>
+	<!-- meta data -->
+	<meta charset="utf-8">
+	<meta content="the labia theatre" name="description">
+	<meta content="film, art, food" name="keywords">
+	<meta content="Claudia" name="author">
+	<meta content="width = desktop - width" name="viewport">
+	<!-- style sheets -->
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Raleway" rel="stylesheet">
+	<link href="icons/css/font-awesome.min.css" rel="stylesheet">
+	<!--[if lt IE 9]>
+
+    <script src="bower_components/html5shiv/dist/html5shiv.js"></script>
+    
+    <![endif]-->
+</head>
+<body>
+	<div id="container">
+		<!-- navigation bar -->
+		<nav>
+			<section class="menu-top">
+				<section class="social-media">
+					<i class="fa fa-facebook" aria-hidden="true"></i>
+					<i class="fa fa-twitter" aria-hidden="true"></i>
+					<i class="fa fa-instagram" aria-hidden="true"></i>
+				</section>
+			</section>
+			<section class="menu">
+				<h1 id="logo-raleway" ">the</h1>
+				<h1 id="logo-abril">Labia</h1>
+				<h1 id="logo-raleway">theatre</h1>
+				<ul>
+					<li>
+						<a href="index.html">current screenings</a>
+					</li>
+					<li>
+						<a href="specials.html">specials</a>
+					</li>
+					<li>
+						<a href="booking.html">bookings</a>
+					</li>
+					<li>
+						<a href="#">about us</a>
+					</li>
+					<li>
+						<a href="contact.html">contact</a>
+					</li>
+				</ul>	
+			</section>
+		</nav>
+		<div class="clearfix"></div>
+		<!-- content section -->
+		<section class="booking">
+			<h1>Make a Booking</h1>
+			<form action="booking.php" method="post">
+				<input list="films" placeholder="Film">
+					<datalist id="films">
+						<option value="Wonder Woman"></option>
+						<option value="La La Land"></option>
+						<option value="Lion"></option>
+						<option value="The True Cost"></option>
+						<option value="That Sugar Film"></option>
+						<option value="The Intouchables"></option>
+					</datalist>
+				<input id='date' type="date" name="day" placeholder="Date">
+				<input list="time" placeholder="Time">
+					<datalist id="time">
+						<option value="11:30">11:30</option>
+						<option value="14:30">14:30</option>
+						<option value="17:30">17:30</option>
+						<option value="20:30">20:30</option>
+					</datalist>
+				<input list="ticket-type" placeholder="Ticket Type">
+					<datalist id="ticket-type">
+						<option>Normal</option>
+						<option>Movie & Meal</option>
+						<option>Student</option>
+						<option>Child</option>
+						<option>Senior</option>
+						<option>Labia Card</option>
+						<option>Gift</option>
+					</datalist>
+				<input id='quantity' type="number" name="quantity" placeholder="1">
+				<button>Book Now</button>
+			</form>
+			<section class="one-third">
+				<h2>Prices</h2>
+					<div class="left">
+						<ul>
+							<li>All movie tickets</li>
+							<li>Students</li>
+							<li>Seniors & children</li>
+							<li>Labia movie card</li>
+							<li>Gift cards</li>
+							<li>10 pre-paid tickets</li>
+						</ul>
+					</div>
+					<div class="right">
+						<ul>
+							<li>R50</li>
+							<li>R40</li>
+							<li>R40</li>
+							<li>R40</li>
+							<li>R40</li>
+							<li>R400</li>
+						</ul>
+					</div>
+			</section>
+			<section class="two-third">
+				<h2>Movie & Meal</h2>
+				<div class="left-meal">
+					<ul>
+						<li><strong>Monday:</strong> Societi Bistro</li>
+							<li><em>(2 pastas, 2 movie tickets)</em></li>
+						<li><strong>Tuesday:</strong> Societi Bistro</li>
+							<li><em>(2 pastas, 2 movie tickets)</em></li>
+						<li><strong>Wednesday:</strong> Diva Cafe</li>
+							<li><em>(2 pizzas, 2 movie tickets)</em></li>
+					</ul>
+				<div class="left-prices">
+					<ul>
+						<li>R110</li>
+						<li>R110</li>
+						<li>R110</li>
+						<li>R110</li>
+						<li>R110</li>
+						<li>R110</li>
+					</ul>
+				</div>
+				<div class="left-meal">
+					<ul>
+						<li><strong>Thursday:</strong> Knead</li>
+							<li><em>(2 burgers, 2 movie tickets)</em></li>
+						<li><strong>Saturday:</strong> Diva Cafe</li>
+							<li><em>(2 pizzas, 2 movie tickets)</em></li>
+						<li><strong>Sunday:</strong> Diva Cafe</li>
+							<li><em>(2 pizzas, 2 movie tickets)</em></li>
+					</ul>
+				</div>
+				<div class="left-prices">
+					<ul>
+						<li>R120</li>
+						<li>R110</li>
+						<li>R110</li>
+						<li>R110</li>
+						<li>R110</li>
+						<li>R110</li>
+					</ul>
+				</div>
+				</div>
+			</section>
+			<div class="clearfix"></div>
+		</section>
+		<!-- footer section -->
+		<footer>
+			<p>Copyright &copy; 2017 The Labia Theatre. All Rights Reserved. Terms & Conditions</p>
+		</footer>
+	</div>
+
+</body>
+</html>
